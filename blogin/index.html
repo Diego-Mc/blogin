@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Blogin</title>
+  </head>
+  <body class="container">
+    <aside class="modal full d-none">
+      <div class="modal-bg" onclick="toggleModal()"></div>
+      <div class="modal-wrapper flex">
+        <i class="bi bi-x-lg close" onclick="toggleModal()"></i>
+        <main>
+          <h2>Join us to get access to the latest stories!</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+            repellendus atque aliquid corrupti quibusdam porro dolorem ipsum
+            dolores!
+          </p>
+          <section class="email-cta flex">
+            <input type="email" placeholder="name@example.com" maxlength="40" />
+            <i class="bi bi-send"></i>
+          </section>
+        </main>
+      </div>
+    </aside>
+
+    <header class="main-header full container rel">
+      <div class="header-wrapper flex abs abs-fill">
+        <h1 class="logo logo-light">Blogin</h1>
+        <button class="nav-btn" onclick="onToggleNav()">
+          <i class="bi bi-list"></i>
+          <i class="bi bi-x-lg d-none"></i>
+        </button>
+        <nav class="main-nav h-100">
+          <ul class="flex h-100">
+            <li
+              class="flex nav-list"
+              onclick="onToggleSelected(event,this)"
+              onmouseenter="onToggleList(this,true)"
+              onmouseleave="onToggleList(this,false)"
+            >
+              <a class="nav-item">Journal</a>
+              <ul class="flex h-100 nav-item">
+                <li
+                  class="flex nav-list secondary"
+                  onclick="onToggleSelected(event,this)"
+                >
+                  <a class="nav-item" href="#">October 2016</a>
+                </li>
+                <li
+                  class="flex nav-list secondary"
+                  onclick="onToggleSelected(event,this)"
+                >
+                  <a class="nav-item" href="#">January 2017</a>
+                </li>
+                <li
+                  class="flex nav-list secondary"
+                  onclick="onToggleSelected(event,this)"
+                >
+                  <a class="nav-item" href="#">April 2017</a>
+                </li>
+                <li
+                  class="flex nav-list secondary"
+                  onclick="onToggleSelected(event,this)"
+                >
+                  <a class="nav-item" href="#">July 2017</a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="flex nav-list"
+              onclick="onToggleSelected(event,this)"
+              onmouseenter="onToggleList(this,true)"
+              onmouseleave="onToggleList(this,false)"
+            >
+              <a class="nav-item" href="#">About</a>
+            </li>
+            <li
+              class="flex nav-list"
+              onclick="onToggleSelected(event,this)"
+              onmouseenter="onToggleList(this,true)"
+              onmouseleave="onToggleList(this,false)"
+            >
+              <a class="nav-item" href="#">Work</a>
+            </li>
+            <li
+              class="flex nav-list"
+              onclick="onToggleSelected(event,this)"
+              onmouseenter="onToggleList(this,true)"
+              onmouseleave="onToggleList(this,false)"
+            >
+              <a class="nav-item" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="posts-container container">
+      <article class="post flex">
+        <section class="post-img flex">
+          <img src="images/img001.png" alt="" />
+        </section>
+        <section class="post-text flex">
+          <div class="post-desc">
+            <h2>DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+            <p>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia
+              deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur...
+            </p>
+          </div>
+          <button class="post-cta" onclick="toggleModal()">
+            Continue Reading
+            <i class="bi bi-arrow-right d-none"></i>
+          </button>
+        </section>
+      </article>
+
+      <article class="post flex">
+        <section class="post-img flex">
+          <img src="images/img002.png" alt="" />
+        </section>
+        <section class="post-text flex">
+          <div class="post-desc">
+            <h2>DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+            <p>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia
+              deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur...
+            </p>
+          </div>
+          <button class="post-cta" onclick="toggleModal()">
+            Continue Reading
+            <i class="bi bi-arrow-right d-none"></i>
+          </button>
+        </section>
+      </article>
+
+      <article class="post flex">
+        <section class="post-img flex">
+          <img src="images/img003.png" alt="" />
+        </section>
+        <section class="post-text flex">
+          <div class="post-desc">
+            <h2>DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+            <p>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia
+              deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur...
+            </p>
+          </div>
+          <button class="post-cta" onclick="toggleModal()">
+            Continue Reading
+            <i class="bi bi-arrow-right d-none"></i>
+          </button>
+        </section>
+      </article>
+    </section>
+
+    <nav class="posts-nav">
+      <ul class="flex">
+        <li>
+          <a href="#"><i class="bi bi-arrow-left"></i>PREVIOUS</a>
+        </li>
+        <li>
+          <a href="#">NEXT<i class="bi bi-arrow-right"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <footer class="main-footer full container flex">
+      <h1 class="logo logo-dark">Blogin</h1>
+      <p class="footer-desc">
+        © 2014 Blogin.com - All Rights Reserved - Find more free Templates at
+        <a href="#">Pixelhint.com</a>
+      </p>
+      <ul class="flex social-links">
+        <li>
+          <button class="social-btn btn-facebook">
+            <i class="bi bi-facebook"></i>
+          </button>
+        </li>
+        <li>
+          <button class="social-btn btn-twitter">
+            <i class="bi bi-twitter"></i>
+          </button>
+        </li>
+        <li>
+          <button class="social-btn btn-behance">
+            <i class="bi bi-behance"></i>
+          </button>
+        </li>
+        <li>
+          <button class="social-btn btn-dribbble">
+            <i class="bi bi-dribbble"></i>
+          </button>
+        </li>
+      </ul>
+    </footer>
+
+    <script>
+      function onToggleNav() {
+        //hamburger to X
+        document.querySelector('.nav-btn .bi-list').classList.toggle('d-none')
+        document.querySelector('.nav-btn .bi-x-lg').classList.toggle('d-none')
+
+        //show nav && open selected list from before (for UX)
+        document.querySelector('.main-nav').classList.toggle('show-nav')
+        const elCurrSelected = document.querySelector('.nav-list.selected')
+        if (elCurrSelected) onToggleList(elCurrSelected, true)
+      }
+
+      function onToggleSelected(ev, el) {
+        ev.stopPropagation()
+
+        //if you have inner-list - show it to user/close it if opened
+        const innerNav = el.querySelector('ul.nav-item')
+        if (innerNav) {
+          return innerNav.classList.toggle('show-list')
+        }
+
+        //remove previoues selection
+        document
+          .querySelectorAll('.nav-list')
+          .forEach((li) => li.classList.remove('selected'))
+
+        //hide inner-lists
+        const elOpenList = document.querySelector('.show-list')
+        if (elOpenList) elOpenList.classList.remove('show-list')
+
+        //if chosen from inner-list add selected class to main list element
+        var elMainList = el.parentNode.parentNode
+        if (el.className != 'nav-list') elMainList.classList.add('selected')
+
+        //add selected to clicked element
+        el.classList.add('selected')
+
+        //close the nav
+        onToggleNav()
+      }
+
+      function onToggleList(el, force) {
+        const innerNav = el.querySelector('ul.nav-item')
+        if (!innerNav) return
+
+        const classObj = innerNav.classList
+
+        if (force) classObj.add('show-list')
+        else if (force === false) classObj.remove('show-list')
+        else classObj.toggle('show-list')
+      }
+
+      function toggleModal() {
+        document.querySelector('.modal').classList.toggle('d-none')
+      }
+    </script>
+  </body>
+</html>
